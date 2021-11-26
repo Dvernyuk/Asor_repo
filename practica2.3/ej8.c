@@ -36,7 +36,7 @@ int main(int argc, char **argv){
 	} else {
 
 		pid_t pid = fork();		
-		int out, err, null, fd2, fd3, fd4;
+		int out, err, null;
 
 		switch (pid) {
 			case -1:
