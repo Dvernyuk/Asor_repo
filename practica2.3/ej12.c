@@ -6,9 +6,9 @@ volatile int nInt = 0;
 volatile int nTstp = 0;
 
 void faux(int signal){
-  if (signal == SIGINT)
+	if (signal == SIGINT)
 		nInt++;
-  if (signal == SIGTSTP)
+	if (signal == SIGTSTP)
 		nTstp++;
 }
 
