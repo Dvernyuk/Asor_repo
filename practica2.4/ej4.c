@@ -9,6 +9,7 @@ int main(int argc, char **argv){
 	int ret = 0;
 	int fd;
 	
+	remove("tuberia");
 	if(mkfifo("tuberia", 0777) == -1){
 		printf("Error %d: %s\n", errno, strerror(errno));
 		ret = -1;
